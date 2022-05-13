@@ -1,0 +1,71 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/sfondocalcolatrice.jpg);
+}
+
+body div{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(44, 43, 43);
+}
+
+.calcolatrice{
+    width: auto;
+    margin: 0 auto;
+    display: inline-grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    gap: 5px;
+}
+
+div.calcolatrice input#result{
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-bottom: 10px;
+    background-color: rgb(112, 157, 157);
+    border-radius: 4px;
+}
+input{
+    font-size: large;
+}
+input.num{
+    border-radius: 4px;
+    background-color: orange;
+}
+input.op{
+    border-radius: 4px;
+    background-color: orangered;
+    font-weight: bold;
+}
+input.equal{
+    border-radius: 4px;
+    background-color: green;
+    font-weight: bold;
+}
+input.reset{
+    border-radius: 4px;
+    background-color: red;
+}
+
+input.equal{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+input:hover{
+    filter: brightness(80%);
+}
+input:active{
+    font-size: small;
+}
+
+input#result:hover{
+    filter: none;
+}
+
+input#result:active{
+   font-size: large;
+}
